@@ -1,0 +1,31 @@
+package jouer;
+
+public class Jeu {
+	Banque labanque;
+	boolean estOuvert;
+	
+	public Jeu(Banque labanque) {
+		this.labanque = labanque;
+		this.estOuvert = true;
+	}
+	public void jouer(Joueur joueur, De de1, De de2) throws JeuFermeException{
+		if(!this.estOuvert) {
+			throw new JeuFermeException();
+		}
+		
+		try {
+			joueur.debiter(joueur.mise());
+		} catch (DebitImpossibleException e) {
+			this.estOuvert = false;
+			e.printStackTrace();
+		}
+	};
+	
+	public void fermer() {
+		this.estOuvert = false;
+	};
+	
+	public boolean estOuvert() {
+		return estOuvert;
+	};
+}

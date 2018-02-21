@@ -1,0 +1,11 @@
+package exo2;
+
+import java.util.ArrayList;
+
+public class ProcessController {
+	private ArrayList<Process> listProc;
+	
+	public ProcessController() {
+		listProc = new ArrayList<Process>();
+	}
+}

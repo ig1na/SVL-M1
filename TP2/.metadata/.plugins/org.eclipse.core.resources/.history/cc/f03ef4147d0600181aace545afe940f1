@@ -1,0 +1,29 @@
+package jouer;
+
+public class BanqueA implements Banque {
+
+	private int solde;
+	
+	public Banque(int solde) {
+		this.solde = solde;
+	}
+	
+	@Override
+	public void crediter(int somme) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean est_solvable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void debiter(int somme) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

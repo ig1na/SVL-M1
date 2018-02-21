@@ -1,0 +1,17 @@
+1. L'approche Mockiste nous fait écrire les tests en simulant le résultat attendu des méthodes issues des dépendances, et nous demande de vérifier le comportement des méthodes de la classe testée. L'approche classique nous fait utiliser des instantiations de ces dépendances; nous allons vraiment appeler les méthodes de ces classes dépendantes et nous allons vérifier l'état de l'objet testé.
+
+2. Fontionnalités de la classe Caisse :
+
+- Paiement par solde carte
+	Si solde positif : paiement accepté, carte debitée
+	Si solde négatif : paiement refusé, carte non débitée
+- Paiement par ticket
+	Si prix repas < valeur ticket et solde ticket > 0 : paiement accepté, ticket consommé
+	Si prix repas > valeur ticket et solde ticket > 0 et solde carte > (prix repas - valeur ticket) : paiement accepté, ticket consommé, carte débitée
+	Si prix repas > valeur ticket et solde ticket > 0 et solde carte < (prix repas - valeur ticket) : paiement refusé, carte non débitée, ticket non consommé
+	Si solde ticket = 0 et solde carte > prix repas : paiement accepté, carte debitée
+	Si solde ticket = 0 et solde carte < prix repas, paiement refusé, carte non débitée
+- Consultation carte 
+	Dans tous les cas, affichage des soldes
+
+3. 

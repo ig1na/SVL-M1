@@ -1,0 +1,21 @@
+package exo2;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.mockito.Mockito.*;
+
+class ProcessControllerTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		ProcessController pc = new ProcessController();
+	}
+
+	@Test
+	void testNbStartedProc() {
+		Process p1 = mock(Process.class, "p1");
+		Process p2 = mock(Process.class, "p2");
+	}
+
+}

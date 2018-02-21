@@ -1,0 +1,6 @@
+package jouer;
+
+public interface Joueur {
+	public int mise();
+	public void debiter(int somme) throws DebitImpossibleException;
+}

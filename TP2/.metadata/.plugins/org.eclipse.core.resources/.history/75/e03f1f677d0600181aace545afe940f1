@@ -1,0 +1,27 @@
+package jouer;
+
+public class BanqueA implements Banque {
+
+	private int solde, mini;
+	
+	public BanqueA(int solde, int mini) {
+		this.solde = solde;
+		this.mini = mini;
+	}
+	
+	@Override
+	public void crediter(int somme) {
+		this.solde+=somme;
+	}
+
+	@Override
+	public boolean est_solvable() {
+		return solde > mini;
+	}
+
+	@Override
+	public void debiter(int somme) {
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="processes.ProcessController"/>
+<fullyQualifiedTypeName name="processes.Process"/>
+<fullyQualifiedTypeName name="jouer.Jeu"/>
+<fullyQualifiedTypeName name="jouer.Joueur"/>
+<fullyQualifiedTypeName name="jouer.De"/>
+<fullyQualifiedTypeName name="jouer.Banque"/>
+<fullyQualifiedTypeName name="jouer.DebitImpossibleException"/>
+<fullyQualifiedTypeName name="jouer.JeuFermeException"/>
+<fullyQualifiedTypeName name="jouer.BanqueA"/>
+</qualifiedTypeNameHistroy>

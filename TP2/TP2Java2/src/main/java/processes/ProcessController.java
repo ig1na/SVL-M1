@@ -1,0 +1,34 @@
+package processes;
+
+import java.util.ArrayList;
+
+public class ProcessController {
+	private ArrayList<Process> listProc;
+	
+	public ProcessController() {
+		listProc = new ArrayList<Process>();
+	}
+	
+	public void addProc(Process p) {
+		this.listProc.add(p);
+	}
+	
+	public void stopAllProc() {
+		for(Process proc : listProc) {
+			proc.stop();
+		}
+	}
+	
+	public int nbStartedProc() {
+		int cpt = 0;
+		
+		for(Process proc : listProc) {
+			if(proc.isRunning()) {
+				cpt++;
+			}
+		}
+		
+		return cpt;
+	}
+}
+

@@ -1,0 +1,28 @@
+package exo2;
+
+import java.util.ArrayList;
+
+public class ProcessController {
+	private ArrayList<Process> listProc;
+	
+	public ProcessController() {
+		listProc = new ArrayList<Process>();
+	}
+	
+	public void addProc(Process p) {
+		this.listProc.add(p);
+	}
+	
+	public void stopAllProc() {
+		for(Process proc : listProc) {
+			proc.stop();
+		}
+	}
+	
+	public int nbStartedProc() {
+		int cpt;
+		for(Process proc : listProc) {
+			cpt++;
+		}
+	}
+}
